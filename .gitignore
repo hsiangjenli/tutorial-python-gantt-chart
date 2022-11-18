@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,git,jupyternotebooks
 
 ### Folder ###
-Images/
+# Images/
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
