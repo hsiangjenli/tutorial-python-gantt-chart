@@ -14,9 +14,9 @@ jobs:
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # run: pip install --upgrade pip
+
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           CONFIG_FILE: mkdocs.yml
-          REQUIREMENTS: requirements.txt
+          # REQUIREMENTS: requirements.txt
 
