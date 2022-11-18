@@ -1,0 +1,59 @@
+[1] 
+task = 'A'
+start = 2018-06-27
+end = 2018-06-22
+complete = 55
+
+[2] 
+task = 'B'
+start = 2018-06-27
+end = 2019-05-27
+complete = 34
+
+[3] 
+task = 'C'
+start = 2017-06-27
+end = 2019-05-27
+complete = 65
+
+[4] 
+task = 'D'
+start = 2019-06-27
+end = 2020-05-27
+complete = 50
+
+[5] 
+task = 'E'
+start = 2015-05-27
+end = 2018-06-22
+complete = 60
+
+[6] 
+task = 'F'
+start = 2014-06-27
+end = 2015-05-27
+complete = 75
+
+[7] 
+task = 'G'
+start = 2017-06-27
+end = 2019-05-27
+complete = 21
+
+[8] 
+task = 'H'
+start = 2015-06-27
+end = 2015-08-27
+complete = 88
+
+[9] 
+task = 'I'
+start = 2014-05-27
+end = 2014-08-22
+complete = 100
+
+[10] 
+task = 'G'
+start = 2015-05-27
+end = 2016-06-22
+complete = 71

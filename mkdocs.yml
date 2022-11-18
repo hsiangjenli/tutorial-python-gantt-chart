@@ -1,0 +1,76 @@
+# Info -------------------------------------------------------------------------------------------------
+# https://squidfunk.github.io/mkdocs-material/
+# https://github.com/mkdocstrings/mkdocstrings
+
+site_name: Gantt
+docs_dir: docs
+copyright: Copyright &copy; 2022 Hsiang-Jen Li | RN
+
+repo_url: https://github.com/hsiangjenli/mkdocs-material-starter-default
+repo_name: mkdocs-starter-default
+
+nav:
+  - "Gantt": index.md
+
+# Theme ------------------------------------------------------------------------------------------------
+theme:
+  name: material
+  language: en
+  icon:
+  logo: assets/images/chart-gantt-solid.svg
+  favicon: assets/images/chart-gantt-solid.svg
+  # ----------------------------------------------------------------------------------------------------
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    
+    repo: fontawesome/brands/git-alt
+  # ----------------------------------------------------------------------------------------------------
+  palette:
+    # Light mode ---------------------------------------------------------------------------------------
+    - scheme: default
+      primary: blue grey
+      accent: indigo
+
+
+# Custom -----------------------------------------------------------------------------------------------
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - footnotes
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - def_list
+  - pymdownx.tabbed
+  - attr_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+- search
+- mkdocstrings:
+      watch:
+        - gantt_helper.py
+- enumerate-headings
