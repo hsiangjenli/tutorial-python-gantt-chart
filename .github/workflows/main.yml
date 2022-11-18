@@ -11,6 +11,9 @@ jobs:
       - name: Checkout 
         uses: actions/checkout@v2
 
+      - name: Python
+        uses: actions/setup-python@v4
+      
       - name: Install
         run: pip install mkdocstrings
 
