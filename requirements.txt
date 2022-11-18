@@ -1,8 +1,8 @@
 # For gantt chart
-toml
-plotly
-nbformat
-kaleido
+# toml
+# plotly
+# nbformat
+# kaleido
 
 # For mkdocs
 
