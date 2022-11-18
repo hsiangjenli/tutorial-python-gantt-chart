@@ -13,6 +13,7 @@ kaleido
 
 mkdocs
 mkdocs-material
+mkdocstrings
 mkdocs-minify-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-authors-plugin
