@@ -10,19 +10,11 @@ jobs:
     steps:
       - name: Checkout 
         uses: actions/checkout@v2
-
-      - name: Python
-        uses: actions/setup-python@v4
-      
-      - name: Install
-        run: pip install mkdocstrings
-
       - name: Build
         uses: Tiryoh/actions-mkdocs@v0
         with:
-          mkdocs_version: 'latest'
-          configfile: 'mkdocs.yml'
-      
+          requirements: 'requirements.txt' # option
+          configfile: 'mkdocs.yml' # option
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
